@@ -1,0 +1,8 @@
+admin = db.getSiblingDB("admin")
+admin.createUser(
+  {
+    user: "dbadmin",
+    pwd: "bismillah",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
